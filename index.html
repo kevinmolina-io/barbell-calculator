@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Barbell Calculator</title>
+  </head>
+  <body>
+    <h1>Barbell Calculator</h1>
+
+    <div class="parent">
+      <div class="top-view"></div>
+      <div class="bottom-view">
+        <div class="input-field">
+          <input type="text" placeholder="Total Weight..." id="total-weight" />
+          <input
+            type="text"
+            placeholder="Barbell Weight..."
+            id="barbell-weight"
+          />
+          <div class="row">
+            <div class="plate-btn column" id="plate-55">55</div>
+            <div class="plate-btn column" id="plate-45">45</div>
+            <div class="plate-btn column" id="plate-35">35</div>
+          </div>
+          <div class="row">
+            <div class="plate-btn column" id="plate-25">25</div>
+            <div class="plate-btn column" id="plate-10">10</div>
+            <div class="plate-btn column" id="plate-5">5</div>
+          </div>
+          <div class="row"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
