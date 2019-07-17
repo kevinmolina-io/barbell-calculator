@@ -93,16 +93,17 @@ input:focus {
   height: 78px;
   text-align: center;
   cursor: pointer;
+  outline: none;
   margin: 10px;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border: 3px solid #a0c89f;
 }
 
-.plate-btn:hover {
+.plate-btn:active {
   background-color: #a0c89f;
   color: #ffffff;
   border: 3px solid #ffffff;
@@ -128,6 +129,7 @@ input:focus {
   color: #ffffff;
   cursor: pointer;
   border: none;
+  outline: none;
 }
 
 .calc-btn:hover {
