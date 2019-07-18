@@ -153,3 +153,68 @@ input:focus {
 .column {
   display: table-cell;
 }
+
+i {
+  font-size: 45px;
+  font-weight: 100;
+}
+
+.output {
+  width: 500px;
+  height: 433px;
+}
+
+.barbell {
+  width: 400px;
+  height: 15px;
+  fill: hsl(116, 0%, 73%);
+  transform: translateX(99px) translateY(233px);
+  -webkit-transform: translateX(99px) translateY(233px);
+  -moz-transform: translateX(99px) translateY(233px);
+  -ms-transform: translateX(99px) translateY(233px);
+  -o-transform: translateX(99px) translateY(233px);
+}
+
+.plate-foFive {
+  width: 22px;
+  height: 193px;
+  fill: black;
+  transform: translateX(186px) translateY(146px);
+  -webkit-transform: translateX(186px) translateY(146px);
+  -moz-transform: translateX(186px) translateY(146px);
+  -ms-transform: translateX(186px) translateY(146px);
+  -o-transform: translateX(186px) translateY(146px);
+}
+
+.label-foFive {
+  width: 15px;
+  height: 14px;
+  fill: white;
+  transform: translateX(188px) translateY(246px);
+  -webkit-transform: translateX(188px) translateY(246px);
+  -moz-transform: translateX(188px) translateY(246px);
+  -ms-transform: translateX(188px) translateY(246px);
+  -o-transform: translateX(188px) translateY(246px);
+}
+
+.plate-threeFive {
+  width: 16.4pt;
+  height: 138pt;
+  fill: black;
+  transform: translateX(117.4pt) translateY(112.8pt);
+  -webkit-transform: translateX(117.4pt) translateY(112.8pt);
+  -moz-transform: translateX(117.4pt) translateY(112.8pt);
+  -ms-transform: translateX(117.4pt) translateY(112.8pt);
+  -o-transform: translateX(117.4pt) translateY(112.8pt);
+}
+
+.label-threeFive {
+  width: 10.8pt;
+  height: 10pt;
+  fill: white;
+  transform: translateX(119.1pt) translateY(183.8pt);
+  -webkit-transform: translateX(119.1pt) translateY(183.8pt);
+  -moz-transform: translateX(119.1pt) translateY(183.8pt);
+  -ms-transform: translateX(119.1pt) translateY(183.8pt);
+  -o-transform: translateX(119.1pt) translateY(183.8pt);
+}
