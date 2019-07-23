@@ -103,16 +103,22 @@ input:focus {
   /* border: 3px solid #a0c89f; */
 }
 
-.plate-btn:active {
+.plate-btn-selected {
   background-color: #a0c89f;
   color: #ffffff;
-  /* border: 3px solid #ffffff; */
-  transition: all 0.4s ease;
+  font-size: 42px;
+  font-weight: 100;
+  width: 82px;
+  height: 78px;
+  text-align: center;
+  cursor: pointer;
   outline: none;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
+  margin: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .calc-btn {
@@ -184,6 +190,8 @@ i {
   width: 22px;
   height: 193px;
   fill: black;
+  stroke-width: 1px;
+  stroke: #9e9ea2;
   transform: translateX(186px) translateY(146px);
   -webkit-transform: translateX(186px) translateY(146px);
   -moz-transform: translateX(186px) translateY(146px);
@@ -203,23 +211,25 @@ i {
 }
 
 .plate-threeFive {
-  width: 16.4pt;
-  height: 138pt;
+  width: 22px;
+  height: 184px;
   fill: black;
-  transform: translateX(117.4pt) translateY(112.8pt);
-  -webkit-transform: translateX(117.4pt) translateY(112.8pt);
-  -moz-transform: translateX(117.4pt) translateY(112.8pt);
-  -ms-transform: translateX(117.4pt) translateY(112.8pt);
-  -o-transform: translateX(117.4pt) translateY(112.8pt);
+  stroke-width: 1px;
+  stroke: #9e9ea2;
+  transform: translateX(163.8px) translateY(150.4px);
+  -webkit-transform: translateX(163.8px) translateY(150.4px);
+  -moz-transform: translateX(163.8px) translateY(150.4px);
+  -ms-transform: translateX(163.8px) translateY(150.4px);
+  -o-transform: translateX(163.8px) translateY(150.4px);
 }
 
 .label-threeFive {
   width: 10.8pt;
   height: 10pt;
   fill: white;
-  transform: translateX(119.1pt) translateY(183.8pt);
-  -webkit-transform: translateX(119.1pt) translateY(183.8pt);
-  -moz-transform: translateX(119.1pt) translateY(183.8pt);
-  -ms-transform: translateX(119.1pt) translateY(183.8pt);
-  -o-transform: translateX(119.1pt) translateY(183.8pt);
+  transform: translateX(166.13px) translateY(245.06px);
+  -webkit-transform: translateX(166.13px) translateY(245.06px);
+  -moz-transform: translateX(166.13px) translateY(245.06px);
+  -ms-transform: translateX(166.13px) translateY(245.06px);
+  -o-transform: translateX(166.13px) translateY(245.06px);
 }

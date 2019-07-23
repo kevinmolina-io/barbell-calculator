@@ -1,6 +1,6 @@
-/**********************************************************/
-/********************** UI Controller *********************/
-/**********************************************************/
+// /**********************************************************/
+// /********************** UI Controller *********************/
+// /**********************************************************/
 
 var UIController = (function() {
   var DOMstrings = {
@@ -32,3 +32,14 @@ var UIController = (function() {
     }
   };
 })();
+
+$("button.plate-btn").click(function() {
+  $button = $(this);
+  if ($button.hasClass("plate-btn-selected")) {
+    $button.removeClass("plate-btn-selected");
+    $button.addClass("plate-btn");
+  } else {
+    $button.addClass("plate-btn-selected");
+    $button.removeClass("plate-btn");
+  }
+});
