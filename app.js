@@ -1,13 +1,10 @@
-let plates = [];
+/***************** MODEL ******************/
+/*****************************************/
+let plates = [45, 35, 25, 10, 5];
 let plateCount = [];
 
-var getButtonValue = function($button) {
-  var label = $button.text();
-  $button.text("");
-  var buttonValue = $button.val();
-  $button.text(label);
-  return buttonValue;
-};
+/**************** CONTROLLER *************/
+/*****************************************/
 
 var arrayRemove = function(arr, value) {
   return arr.filter(function(ele) {
@@ -15,7 +12,7 @@ var arrayRemove = function(arr, value) {
   });
 };
 
-$("button.plate-btn").click(function() {
+$("button.plate").click(function() {
   $button = $(this);
   let plateVal = "";
   if ($button.hasClass("plate-btn-selected")) {
@@ -34,23 +31,53 @@ $("button.plate-btn").click(function() {
 });
 
 var constructPlateCountArray = function() {
-  for (var i = 0; i < plates.length(); i++) {
+  for (var i = 0; i < plates.length; i++) {
     plateCount.push(0);
   }
 };
 
-// console.log(plates);
-
-var calcPlates = function() {
-  plates = plates.sort();
-  plates = plates.reverse();
-  let totalWeight = parseFloat(document.getElementById("total-weight").value);
-  const BARBELL_WEIGHT = parseFloat(
-    document.getElementById("barbell-weight").value
-  );
+var resetInputs = function() {
+  document.getElementById("total-weight").value = "";
+  document.getElementById("barbell-weight").value = "";
+  plates = [45, 35, 25, 10, 5];
+  plateCount = [];
 };
 
-function getCube() {
-  let number = parseInt(document.getElementById("total-weight").value);
-  alert(number * number * number);
-}
+var getUserInput = function() {
+  let userInputs = [0, 0];
+  // Gather user input
+  let totalWeight = parseFloat(document.getElementById("total-weight").value); // total weight
+  const BARBELL_WEIGHT = parseFloat(
+    document.getElementById("barbell-weight").value
+  ); // barbell weight
+  userInputs[0] = totalWeight;
+  userInputs[1] = BARBELL_WEIGHT;
+
+  return userInputs;
+};
+
+var renderOutput = function() {};
+
+var calcPlates = function() {
+  // sort by descending order
+  plates = plates.sort(function(a, b) {
+    return b - a;
+  });
+
+  let tWeight = getUserInput()[0];
+  let bWeight = getUserInput()[1];
+
+  let weight = (tWeight - bWeight) / 2.0; // weight on each side
+  constructPlateCountArray();
+
+  for (var i = 0; i < plates.length; i++) {
+    while (weight >= plates[i]) {
+      weight -= plates[i];
+      plateCount[i] += 1;
+    }
+  }
+
+  console.log(plateCount);
+
+  resetInputs();
+};
