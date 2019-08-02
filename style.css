@@ -191,28 +191,39 @@ i {
   -o-transform: translateX(99px) translateY(175px);
 }
 
+.bound {
+  width: 25px;
+  height: 35px;
+  fill: hsl(116, 0%, 73%);
+  transform: translateX(270px) translateY(164px);
+  -webkit-transform: translateX(270px) translateY(164px);
+  -moz-transform: translateX(270px) translateY(164px);
+  -ms-transform: translateX(270px) translateY(164px);
+  -o-transform: translateX(270px) translateY(164px);
+}
+
 .plate-foFive {
   width: 22px;
   height: 193px;
   fill: black;
   stroke-width: 1px;
   stroke: #9e9ea2;
-  transform: translateX(186px) translateY(80px);
-  -webkit-transform: translateX(186px) translateY(80px);
-  -moz-transform: translateX(186px) translateY(80px);
-  -ms-transform: translateX(186px) translateY(80px);
-  -o-transform: translateX(186px) translateY(80px);
+  transform: translateX(248px) translateY(80px);
+  -webkit-transform: translateX(248px) translateY(80px);
+  -moz-transform: translateX(248px) translateY(80px);
+  -ms-transform: translateX(248px) translateY(80px);
+  -o-transform: translateX(248px) translateY(80px);
 }
 
 .label-foFive {
   width: 15px;
   height: 14px;
   fill: white;
-  transform: translateX(188px) translateY(189px);
-  -webkit-transform: translateX(188px) translateY(189px);
-  -moz-transform: translateX(188px) translateY(189px);
-  -ms-transform: translateX(188px) translateY(189px);
-  -o-transform: translateX(188px) translateY(189px);
+  transform: translateX(250px) translateY(189px);
+  -webkit-transform: translateX(250px) translateY(189px);
+  -moz-transform: translateX(250px) translateY(189px);
+  -ms-transform: translateX(250px) translateY(189px);
+  -o-transform: translateX(250px) translateY(189px);
 }
 
 .plate-threeFive {
@@ -221,20 +232,20 @@ i {
   fill: black;
   stroke-width: 1px;
   stroke: #9e9ea2;
-  transform: translateX(163.8px) translateY(84.4px);
-  -webkit-transform: translateX(163.8px) translateY(84.4px);
-  -moz-transform: translateX(163.8px) translateY(84.4px);
-  -ms-transform: translateX(163.8px) translateY(84.4px);
-  -o-transform: translateX(163.8px) translateY(84.4px);
+  transform: translateX(226px) translateY(84.4px);
+  -webkit-transform: translateX(226px) translateY(84.4px);
+  -moz-transform: translateX(226px) translateY(84.4px);
+  -ms-transform: translateX(226px) translateY(84.4px);
+  -o-transform: translateX(226px) translateY(84.4px);
 }
 
 .label-threeFive {
   width: 10.8pt;
   height: 10pt;
   fill: white;
-  transform: translateX(166.13px) translateY(189.06px);
-  -webkit-transform: translateX(166.13px) translateY(189.06px);
-  -moz-transform: translateX(166.13px) translateY(189.06px);
-  -ms-transform: translateX(166.13px) translateY(189.06px);
-  -o-transform: translateX(166.13px) translateY(189.06px);
+  transform: translateX(228px) translateY(189.06px);
+  -webkit-transform: translateX(228px) translateY(189.06px);
+  -moz-transform: translateX(228px) translateY(189.06px);
+  -ms-transform: translateX(228px) translateY(189.06px);
+  -o-transform: translateX(228px) translateY(189.06px);
 }
