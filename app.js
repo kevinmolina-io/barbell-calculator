@@ -1,6 +1,6 @@
 /***************** MODEL ******************/
 /*****************************************/
-let plates = [45, 35, 25, 10, 5];
+let plates = [45, 35, 25, 10, 5, 2.5];
 let plateCount = [];
 
 /**************** CONTROLLER *************/
@@ -56,7 +56,35 @@ var getUserInput = function() {
   return userInputs;
 };
 
-var renderOutput = function() {};
+var renderOutput = function() {
+  let html, newHtml, label, newLabel;
+
+  // Figure out the bound from where we're going to position the plates in the UI.
+  let startingPoint = d3.select(".bound").attr("x");
+
+  //Start creating the plates
+  for (var i = 0; i < plates.length; i++) {
+    while (plateCount[i] > 0) {
+      startingPoint = startingPoint - 22;
+      html = '<rect class="plate-view plate-%num%" x="%coordX%"></rect>';
+      newHtml = html.replace("%num%", plates[i]);
+      newHtml = newHtml.replace("%coordX%", startingPoint);
+      document
+        .querySelector(".output")
+        .insertAdjacentHTML("beforeend", newHtml);
+      label =
+        '<text class="label-view label-%plate%" x="%lblX">' +
+        plates[i] +
+        "</text>";
+      newLabel = label.replace("%plate%", plates[i]);
+      newLabel = newLabel.replace("%lblX", startingPoint + 2);
+      document
+        .querySelector(".output")
+        .insertAdjacentHTML("beforeend", newLabel);
+      plateCount[i] -= 1;
+    }
+  }
+};
 
 var calcPlates = function() {
   // sort by descending order
@@ -77,7 +105,15 @@ var calcPlates = function() {
     }
   }
 
+  if (weight !== 0) {
+    alert("Not Rackable with plate selection!");
+    resetInputs();
+  }
+
   console.log(plateCount);
+  renderOutput();
 
   resetInputs();
 };
+
+// renderOutput();

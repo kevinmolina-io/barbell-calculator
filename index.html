@@ -21,13 +21,23 @@
         <h1 class="instructions-top">On each side:</h1>
         <svg class="output">
           <rect class="barbell"></rect>
-          <rect class="bound"></rect>
-          <rect class="plate-foFive" x="248" y="80"></rect>
-          <text class="label-foFive" x="250" y="189">45</text>
-          <rect class="plate-threeFive" x="226" y="84"></rect>
-          <text class="label-threeFive" x="228" y="189">35</text>
-          <rect class="plate-threeFive" x="204" y="84"></rect>
-          <text class="label-threeFive" x="206" y="189">35</text>
+          <rect class="bound" x="270" y="164"></rect>
+          <!-- <rect class="plate-45" x="248"></rect>
+          <text class="label-45" x="250">45</text>
+          <rect class="plate-35" x="226"></rect>
+          <text class="label-35" x="228">35</text>
+          <rect class="plate-35" x="204"></rect>
+          <text class="label-35" x="206">35</text>
+          <rect class="plate-view plate-25" x="182"></rect>
+          <text class="label-view label-25" x="184">25</text>
+          <rect class="plate-view plate-10" x="160"></rect>
+          <text class="label-view label-10" x="162">10</text>
+          <rect class="plate-view plate-10" x="160"></rect>
+          <text class="label-view label-10" x="162">10</text>
+          <rect class="plate-view plate-5" x="138"></rect>
+          <text class="label-view label-5" x="140">5</text>
+          <rect class="plate-view plate-2.5" x="116"></rect>
+          <text class="label-view label-2.5" x="118">2.5</text> -->
         </svg>
       </div>
       <div class="bottom-view">
@@ -49,45 +59,25 @@
           <h1 class="instructions">Select Plates:</h1>
         </div>
         <div class="parent-plate">
-          <button class="plate plate-btn column" id="plate-55" value="55">
+          <button class="plate plate-btn column" value="55">
             55
           </button>
-          <button
-            class="plate plate-btn-selected column"
-            id="plate-45"
-            value="45"
-          >
+          <button class="plate plate-btn-selected column" value="45">
             45
           </button>
-          <button
-            class="plate plate-btn-selected column"
-            id="plate-35"
-            value="35"
-          >
+          <button class="plate plate-btn-selected column" value="35">
             35
           </button>
-          <button
-            class="plate plate-btn-selected column"
-            id="plate-25"
-            value="25"
-          >
+          <button class="plate plate-btn-selected column" value="25">
             25
           </button>
-          <button
-            class="plate plate-btn-selected column"
-            id="plate-10"
-            value="10"
-          >
+          <button class="plate plate-btn-selected column" value="10">
             10
           </button>
-          <button
-            class="plate plate-btn-selected column"
-            id="plate-5"
-            value="5"
-          >
+          <button class="plate plate-btn-selected column" value="5">
             5
           </button>
-          <button class="plate plate-btn column" id="plate-2half" value="2.5">
+          <button class="plate plate-btn-selected column" value="2.5">
             2.5
           </button>
           <button
@@ -101,6 +91,7 @@
       </div>
     </div>
 
+    <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="app.js"></script>
   </body>

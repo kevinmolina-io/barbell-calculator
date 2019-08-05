@@ -195,37 +195,155 @@ i {
   width: 25px;
   height: 35px;
   fill: hsl(116, 0%, 73%);
-  transform: translateX(270px) translateY(164px);
+  /* transform: translateX(270px) translateY(164px);
   -webkit-transform: translateX(270px) translateY(164px);
   -moz-transform: translateX(270px) translateY(164px);
   -ms-transform: translateX(270px) translateY(164px);
-  -o-transform: translateX(270px) translateY(164px);
+  -o-transform: translateX(270px) translateY(164px); */
 }
 
-.plate-foFive {
+.plate-45 {
   width: 22px;
-  height: 193px;
+  height: 200px;
   fill: black;
   stroke-width: 1px;
   stroke: #9e9ea2;
+  transform: translateY(76px);
+  -webkit-transform: translateY(76px);
+  -moz-transform: translateY(76px);
+  -ms-transform: translateY(76px);
+  -o-transform: translateY(76px);
 }
 
-.label-foFive {
+.label-45 {
   width: 15px;
   height: 14px;
   fill: white;
+  transform: translateY(189px);
+  -webkit-transform: translateY(189px);
+  -moz-transform: translateY(189px);
+  -ms-transform: translateY(189px);
+  -o-transform: translateY(189px);
 }
 
-.plate-threeFive {
+.plate-35 {
   width: 22px;
   height: 184px;
   fill: black;
   stroke-width: 1px;
   stroke: #9e9ea2;
+  transform: translateY(84px);
+  -webkit-transform: translateY(84px);
+  -moz-transform: translateY(84px);
+  -ms-transform: translateY(84px);
+  -o-transform: translateY(84px);
 }
 
-.label-threeFive {
-  width: 10.8pt;
-  height: 10pt;
+.label-35 {
+  width: 14px;
+  height: 13px;
   fill: white;
+  transform: translateY(189px);
+  -webkit-transform: translateY(189px);
+  -moz-transform: translateY(189px);
+  -ms-transform: translateY(189px);
+  -o-transform: translateY(189px);
+}
+
+.plate-25 {
+  width: 22px;
+  height: 174px;
+  fill: black;
+  stroke-width: 1px;
+  stroke: #9e9ea2;
+  transform: translateY(90px);
+  -webkit-transform: translateY(90px);
+  -moz-transform: translateY(90px);
+  -ms-transform: translateY(90px);
+  -o-transform: translateY(90px);
+}
+
+.label-25 {
+  width: 13px;
+  height: 12px;
+  fill: white;
+  transform: translateY(189px);
+  -webkit-transform: translateY(189px);
+  -moz-transform: translateY(189px);
+  -ms-transform: translateY(189px);
+  -o-transform: translateY(189px);
+}
+
+.plate-10 {
+  width: 22px;
+  height: 150px;
+  fill: black;
+  stroke-width: 1px;
+  stroke: #9e9ea2;
+  transform: translateY(100px);
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+}
+
+.label-10 {
+  width: 12px;
+  height: 11px;
+  fill: white;
+  transform: translateY(189px);
+  -webkit-transform: translateY(189px);
+  -moz-transform: translateY(189px);
+  -ms-transform: translateY(189px);
+  -o-transform: translateY(189px);
+}
+
+.plate-5 {
+  width: 22px;
+  height: 130px;
+  fill: black;
+  stroke-width: 1px;
+  stroke: #9e9ea2;
+  transform: translateY(110px);
+  -webkit-transform: translateY(110px);
+  -moz-transform: translateY(110px);
+  -ms-transform: translateY(110px);
+  -o-transform: translateY(110px);
+}
+
+.label-5 {
+  font-size: 14px;
+  width: 11px;
+  height: 10px;
+  fill: white;
+  transform: translateY(189px);
+  -webkit-transform: translateY(189px);
+  -moz-transform: translateY(189px);
+  -ms-transform: translateY(189px);
+  -o-transform: translateY(189px);
+}
+
+.plate-2\.5 {
+  width: 22px;
+  height: 95px;
+  fill: black;
+  stroke-width: 1px;
+  stroke: #9e9ea2;
+  transform: translateY(130px);
+  -webkit-transform: translateY(130px);
+  -moz-transform: translateY(130px);
+  -ms-transform: translateY(130px);
+  -o-transform: translateY(130px);
+}
+
+.label-2\.5 {
+  font-size: 12px;
+  width: 11px;
+  height: 10px;
+  fill: white;
+  transform: translateY(189px);
+  -webkit-transform: translateY(189px);
+  -moz-transform: translateY(189px);
+  -ms-transform: translateY(189px);
+  -o-transform: translateY(189px);
 }
