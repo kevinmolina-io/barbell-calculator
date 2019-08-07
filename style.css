@@ -202,6 +202,30 @@ i {
   -o-transform: translateX(270px) translateY(164px); */
 }
 
+.plate-55 {
+  width: 22px;
+  height: 220px;
+  fill: black;
+  stroke-width: 1px;
+  stroke: #9e9ea2;
+  transform: translateY(65px);
+  -webkit-transform: translateY(65px);
+  -moz-transform: translateY(65px);
+  -ms-transform: translateY(65px);
+  -o-transform: translateY(65px);
+}
+
+.label-55 {
+  width: 16px;
+  height: 15px;
+  fill: white;
+  transform: translateY(189px);
+  -webkit-transform: translateY(189px);
+  -moz-transform: translateY(189px);
+  -ms-transform: translateY(189px);
+  -o-transform: translateY(189px);
+}
+
 .plate-45 {
   width: 22px;
   height: 200px;

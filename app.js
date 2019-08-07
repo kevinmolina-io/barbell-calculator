@@ -13,25 +13,50 @@ var arrayRemove = function(arr, value) {
   });
 };
 
-var getPlateValues = function() {
-  $("button.plate").click(function() {
-    $button = $(this);
-    let plateVal = "";
-    if ($button.hasClass("plate-btn-selected")) {
-      $button.removeClass("plate-btn-selected");
-      $button.addClass("plate-btn");
-      plateVal = parseFloat($button.text());
-      plates = arrayRemove(plates, plateVal);
-      console.log(plates);
-    } else {
-      $button.addClass("plate-btn-selected");
-      $button.removeClass("plate-btn");
-      plateVal = parseFloat($button.text());
-      plates.push(plateVal);
-      console.log(plates);
-    }
-  });
-};
+$("button.plate").click(function() {
+  $button = $(this);
+  let plateVal = "";
+  if ($button.hasClass("plate-btn-selected")) {
+    $button.removeClass("plate-btn-selected");
+    $button.addClass("plate-btn");
+    plateVal = parseFloat($button.text());
+    plates = arrayRemove(plates, plateVal);
+    console.log(plates);
+  } else {
+    $button.addClass("plate-btn-selected");
+    $button.removeClass("plate-btn");
+    plateVal = parseFloat($button.text());
+    plates.push(plateVal);
+    console.log(plates);
+  }
+});
+
+(function($) {
+  $.fn.inputFilter = function(inputFilter) {
+    return this.on(
+      "input keydown keyup mousedown mouseup select contextmenu drop",
+      function() {
+        if (inputFilter(this.value)) {
+          this.oldValue = this.value;
+          this.oldSelectionStart = this.selectionStart;
+          this.oldSelectionEnd = this.selectionEnd;
+        } else if (this.hasOwnProperty("oldValue")) {
+          this.value = this.oldValue;
+          this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+        }
+      }
+    );
+  };
+})(jQuery);
+
+// Install input filters.
+$("#total-weight").inputFilter(function(value) {
+  return /^\d*$/.test(value);
+});
+
+$("#barbell-weight").inputFilter(function(value) {
+  return /^\d*$/.test(value);
+});
 
 var constructPlateCountArray = function() {
   for (var i = 0; i < plates.length; i++) {
@@ -68,7 +93,6 @@ var renderOutput = function() {
   let html, newHtml, label, newLabel;
 
   clearView();
-  getPlateValues();
 
   // Figure out the bound from where we're going to position the plates in the UI.
   let startingPoint = d3.select(".bound").attr("x");
@@ -103,11 +127,13 @@ var calcPlates = function() {
     return b - a;
   });
 
-  let tWeight = getUserInput()[0];
-  let bWeight = getUserInput()[1];
+  let tWeight = document.getElementById("total-weight").value;
+
+  let bWeight = document.getElementById("barbell-weight").value;
 
   let weight = (tWeight - bWeight) / 2.0; // weight on each side
-  constructPlateCountArray();
+
+  constructPlateCountArray(); // [0, 0, 0, ... , plates.length]
 
   for (var i = 0; i < plates.length; i++) {
     while (weight >= plates[i]) {
