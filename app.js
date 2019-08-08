@@ -67,7 +67,6 @@ var constructPlateCountArray = function() {
 var resetInputs = function() {
   document.getElementById("total-weight").value = "";
   document.getElementById("barbell-weight").defaultValue = 45;
-  plates = [45, 35, 25, 10, 5, 2.5];
   plateCount = [];
 };
 
