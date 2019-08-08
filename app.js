@@ -51,11 +51,11 @@ $("button.plate").click(function() {
 
 // Install input filters.
 $("#total-weight").inputFilter(function(value) {
-  return /^\d*$/.test(value);
+  return /^\d*$/.test(value) && (value === "" || parseInt(value) <= 2000); // Heaviest weight ever deadlifted belongs to Zydrunas Savickas at 1155 lbs.
 });
 
 $("#barbell-weight").inputFilter(function(value) {
-  return /^\d*$/.test(value);
+  return /^\d*$/.test(value) && (value === "" || parseInt(value) <= 2000); // Heaviest weight ever deadlifted belongs to Zydrunas Savickas at 1155 lbs.
 });
 
 var constructPlateCountArray = function() {
