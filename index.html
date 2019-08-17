@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/dist/style.css" />
+    <link rel="stylesheet" type="text/css" href="/dist/queries.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Barbell Calculator</title>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="top-view">
+        <h1 class="instructions-top">On each side:</h1>
+        <svg class="output">
+          <rect class="barbell"></rect>
+          <rect class="bound" x="270" y="164"></rect>
+
+          <!-- <rect class="plate-45" x="248"></rect>
+          <text class="label-45" x="250">45</text> -->
+        </svg>
+      </div>
+      <div class="bottom-view">
+        <div class="input-field">
+          <form action="">
+            <input
+              type="text"
+              placeholder="Total Weight (lbs)"
+              id="total-weight"
+            />
+            <input
+              type="text"
+              placeholder="Barbell Weight (lbs)"
+              id="barbell-weight"
+            />
+          </form>
+        </div>
+        <div class="plates-avail">
+          <h2 class="instructions">Select Plates:</h2>
+        </div>
+        <div class="parent-plate">
+          <button class="plate plate-btn column" value="55">
+            55
+          </button>
+          <button class="plate plate-btn-selected column" value="45">
+            45
+          </button>
+          <button class="plate plate-btn-selected column" value="35">
+            35
+          </button>
+          <button class="plate plate-btn-selected column" value="25">
+            25
+          </button>
+          <button class="plate plate-btn-selected column" value="10">
+            10
+          </button>
+          <button class="plate plate-btn-selected column" value="5">
+            5
+          </button>
+          <button class="plate plate-btn-selected column" value="2.5">
+            2.5
+          </button>
+          <button
+            class="calc-btn column"
+            id="calc-weight"
+            onclick="calcPlates()"
+          >
+            <i class="icon ion-ios-fitness"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/dist/app.js"></script>
+  </body>
+</html>
