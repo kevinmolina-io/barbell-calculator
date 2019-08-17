@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Barbell Racking Calculator",
   "main": "index.js",
-  "homepage": "https://kame087.github.io/barbell-calculator",
+  "homepage": "http://kame087.github.io/barbell-calculator",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "jquery": "^3.4.1"
