@@ -1,0 +1,25 @@
+{
+  "name": "barbellcalc",
+  "version": "1.0.0",
+  "description": "Barbell Racking Calculator",
+  "main": "index.js",
+  "homepage": "https://kame087.github.io/barbell-calculator",
+  "dependencies": {
+    "gh-pages": "^2.1.1",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kame087/barbell-calculator.git"
+  },
+  "author": "Kevin Molina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kame087/barbell-calculator/issues"
+  },
+  "homepage": "https://github.com/kame087/barbell-calculator#readme"
+}
