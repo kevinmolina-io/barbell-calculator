@@ -49,6 +49,7 @@ h1 {
   width: 400px;
   height: 47px;
   margin: 59px auto auto auto;
+  z-index: 3;
 }
 
 #total-weight,
@@ -81,12 +82,14 @@ input:focus {
 }
 
 .plates-avail {
-  margin-top: 50px;
-  margin-bottom: 30px;
+  /* margin-top: 50px; */
+  /* margin-bottom: 30px; */
+  text-align: center;
 }
 
 .instructions {
   color: #ffffff;
+  justify-content: center;
 }
 
 .plate-btn {
@@ -163,7 +166,7 @@ input:focus {
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
   /* margin: 39px 59px; */
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .column {
