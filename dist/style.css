@@ -8,6 +8,10 @@ h1 {
   color: #ffffff;
 }
 
+input {
+  font-size: 1rem;
+}
+
 .instructions-top {
   margin-top: 12px;
 }
@@ -373,4 +377,12 @@ i {
   -moz-transform: translateY(189px);
   -ms-transform: translateY(189px);
   -o-transform: translateY(189px);
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
 }
