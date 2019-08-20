@@ -8,6 +8,10 @@ h1 {
   color: #ffffff;
 }
 
+input {
+  font-size: 1rem;
+}
+
 .instructions-top {
   margin-top: 12px;
 }
@@ -94,12 +98,13 @@ input:focus {
 
 .plate-btn {
   background-color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 100;
   color: #a0c89f;
   width: 82px;
   height: 78px;
   text-align: center;
+  line-height: 50px;
   cursor: pointer;
   outline: none;
   margin: 10px;
@@ -114,11 +119,12 @@ input:focus {
 .plate-btn-selected {
   background-color: #a0c89f;
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 100;
   width: 82px;
   height: 78px;
   text-align: center;
+  line-height: 50px;
   cursor: pointer;
   outline: none;
   margin: 10px;
@@ -373,4 +379,12 @@ i {
   -moz-transform: translateY(189px);
   -ms-transform: translateY(189px);
   -o-transform: translateY(189px);
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
 }
