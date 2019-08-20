@@ -104,6 +104,7 @@ input:focus {
   width: 82px;
   height: 78px;
   text-align: center;
+  line-height: 50px;
   cursor: pointer;
   outline: none;
   margin: 10px;
@@ -123,6 +124,7 @@ input:focus {
   width: 82px;
   height: 78px;
   text-align: center;
+  line-height: 50px;
   cursor: pointer;
   outline: none;
   margin: 10px;
