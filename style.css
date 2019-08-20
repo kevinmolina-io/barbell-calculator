@@ -56,7 +56,7 @@ h1 {
 #barbell-weight {
   width: 160px;
   height: 47px;
-  font-size: 18px;
+  font-size: 16px;
   padding-left: 17px;
   float: left;
   border-radius: 15px;
@@ -94,7 +94,7 @@ input:focus {
 
 .plate-btn {
   background-color: #ffffff;
-  font-size: 42px;
+  font-size: 2rem;
   font-weight: 100;
   color: #a0c89f;
   width: 82px;
@@ -114,7 +114,7 @@ input:focus {
 .plate-btn-selected {
   background-color: #a0c89f;
   color: #ffffff;
-  font-size: 42px;
+  font-size: 2rem;
   font-weight: 100;
   width: 82px;
   height: 78px;
