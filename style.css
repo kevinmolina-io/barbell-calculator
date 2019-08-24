@@ -27,7 +27,6 @@ input {
   height: 1087px;
   margin: 0;
   background-color: transparent;
-  box-shadow: 5px 10px 8px #585858;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -37,7 +36,7 @@ input {
 }
 
 .top-view {
-  width: 500px;
+  width: 498px;
   height: 433px;
   background-color: #6c7077;
   border: none;
@@ -102,7 +101,6 @@ input:focus {
 .plate-btn {
   background-color: #ffffff;
   font-size: 1.9rem;
-  font-family: courier, monospace;
   font-weight: 100;
   color: #a0c89f;
   width: 82px;
@@ -123,7 +121,6 @@ input:focus {
   background-color: #a0c89f;
   color: #ffffff;
   font-size: 1.9rem;
-  font-family: courier, monospace;
   font-weight: 100;
   width: 82px;
   height: 78px;
