@@ -24,7 +24,7 @@ input {
 .parent {
   width: 500px;
   height: 1087px;
-  margin: auto;
+  margin: 0;
   background-color: transparent;
   box-shadow: 5px 10px 8px #585858;
   border-radius: 5px;
