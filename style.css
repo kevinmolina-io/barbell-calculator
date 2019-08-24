@@ -11,6 +11,7 @@ h1 {
 
 h2 {
   font-family: "Roboto", "sans-serif";
+  font-weight: 100;
 }
 
 input {
@@ -102,6 +103,7 @@ input:focus {
   background-color: #ffffff;
   font-size: 1.9rem;
   font-family: courier, monospace;
+  font-weight: 100;
   color: #a0c89f;
   width: 82px;
   height: 78px;
@@ -115,7 +117,6 @@ input:focus {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  /* border: 3px solid #a0c89f; */
 }
 
 .plate-btn-selected {
@@ -123,7 +124,7 @@ input:focus {
   color: #ffffff;
   font-size: 1.9rem;
   font-family: courier, monospace;
-  /* padding-right: 5px; */
+  font-weight: 100;
   width: 82px;
   height: 78px;
   text-align: center;
