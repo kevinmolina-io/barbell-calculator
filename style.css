@@ -25,13 +25,8 @@ input {
 .parent {
   width: 500px;
   height: 1087px;
-  margin: 0;
+  margin: auto;
   background-color: transparent;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
   border: none;
 }
 
@@ -191,7 +186,7 @@ i {
 }
 
 .barbell {
-  width: 400px;
+  width: 396px;
   height: 15px;
   fill: hsl(116, 0%, 73%);
   transform: translateX(99px) translateY(175px);
