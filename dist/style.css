@@ -1,11 +1,17 @@
 body {
   font-family: "Roboto", "sans-serif";
+  margin: 0;
 }
 
 h1 {
   font-weight: 100;
   text-align: center;
   color: #ffffff;
+}
+
+h2 {
+  font-family: "Roboto", "sans-serif";
+  font-weight: 100;
 }
 
 input {
@@ -21,21 +27,14 @@ input {
   height: 1087px;
   margin: auto;
   background-color: transparent;
-  box-shadow: 5px 10px 8px #585858;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  border: none;
 }
 
 .top-view {
-  width: 500px;
+  width: 498px;
   height: 433px;
   background-color: #6c7077;
   border: none;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
   padding: 1px;
 }
 
@@ -44,8 +43,6 @@ input {
   height: 654px;
   background-color: #0c1c23;
   border: none;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
   overflow: auto;
 }
 
@@ -113,7 +110,6 @@ input:focus {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  /* border: 3px solid #a0c89f; */
 }
 
 .plate-btn-selected {
@@ -190,7 +186,7 @@ i {
 }
 
 .barbell {
-  width: 400px;
+  width: 396px;
   height: 15px;
   fill: hsl(116, 0%, 73%);
   transform: translateX(99px) translateY(175px);
