@@ -99,7 +99,7 @@ input:focus {
 .plate-btn {
   background-color: #ffffff;
   font-size: 1.9rem;
-  font-family: "Courier New", Courier, monospace;
+  font-family: courier, monospace;
   color: #a0c89f;
   width: 82px;
   height: 78px;
@@ -120,7 +120,7 @@ input:focus {
   background-color: #a0c89f;
   color: #ffffff;
   font-size: 1.88rem;
-  font-family: "Courier New", Courier, monospace;
+  font-family: courier, monospace;
   padding-right: 5px;
   width: 82px;
   height: 78px;
